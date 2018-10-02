@@ -29,6 +29,6 @@
     </script>
 
 	<script src='assets/js/lib.js'></script>
-	<script src='assets/js/app.js'></script>
+	<script src='assets/js/app.js?_t=<?php echo time(); ?>'></script>
 
 </html>
