@@ -3,29 +3,23 @@
 		"separator": ";\n\n"
 	},
 	"js-app": {
-		"src": ["src/js/app-*"],
+		"src": ["src/js/*"],
 		"dest": "public/assets/js/app.js"
-	},
-	"js-common": {
-		"src": ["src/js/common/*"],
-		"dest": "public/assets/js/common.js"
 	},
 	"lib": {
 		"src": [
 	  		"node_modules/jquery/dist/jquery.js",
             "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
-            "node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js",
             "node_modules/handlebars/dist/handlebars.min.js",
-            "node_modules/corejs-typeahead/dist/typeahead.bundle.min.js",
-            "node_modules/moment/min/moment.min.js"
+            "node_modules/moment/min/moment.min.js",
+            "node_modules/annyang/dist/annyang.js",
+            "node_modules/annyang/dist/speechkitt.js"
         ],
 		"dest": "public/assets/js/lib.js"
 	},
 	"libcss": {
 		"src": [
-			"src/css/font.css",
-            "node_modules/bootstrap/dist/css/bootstrap.min.css",
-            "node_modules/ui/ui.css"
+            "node_modules/bootstrap/dist/css/bootstrap.min.css"
         ],
 		"dest": "public/assets/css/lib.css"
 	}

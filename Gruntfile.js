@@ -12,7 +12,6 @@ module.exports = function (grunt) {
         handlebars: grunt.file.readJSON('grunt/handlebars.json'),
         concat:     grunt.file.readJSON('grunt/concat.json'),
         copy:       grunt.file.readJSON('grunt/copy.json')
-
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -27,9 +26,8 @@ module.exports = function (grunt) {
     grunt.registerTask('setup',          ['concat:lib', 'concat:libcss', 'copy']);
     grunt.registerTask('compile-assets', ['cssmin',     'handlebars']);
 
-    grunt.registerTask('compile-common', ['clean:common', 'jshint:js-common', 'concat:js-common']);
-    grunt.registerTask('compile-app',    ['clean:app',    'jshint:js-app',    'concat:js-app']);
+    grunt.registerTask('compile-app',    ['clean:app',    'jshint:js',    'concat:js-app']);
 
-    grunt.registerTask('default',        ['setup', 'compile-assets', 'compile-common', 'compile-app']);
+    grunt.registerTask('default',        ['setup', 'compile-assets', 'compile-app']);
     grunt.registerTask('build',          ['clean', 'setup', 'compile-assets', 'concat', 'uglify']);
 };

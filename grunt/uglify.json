@@ -6,13 +6,6 @@
             ]
         }
     },
-    "common": {
-        "files": {
-            "public/assets/js/common.min.js": [
-                "public/assets/js/common.js"
-            ]
-        }
-    },
     "lib": {
         "files": {
             "public/assets/js/lib.min.js": [

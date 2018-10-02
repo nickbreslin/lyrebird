@@ -1,11 +1,5 @@
 {
-	"assets": [
-        "public/assets/js/*"
-    ],
-    "common": [
-        "public/assets/js/common*"
-    ],
     "app": [
-        "public/assets/js/app*"
+        "public/assets/js/*"
     ]
 }

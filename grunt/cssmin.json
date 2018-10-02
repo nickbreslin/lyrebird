@@ -2,7 +2,7 @@
   "target": {
     "files": [{
       "expand": false,
-      "src": ["src/css/*.css", "!src/css/font.css"],
+      "src": ["src/css/*.css"],
       "dest": "public/assets/css/styles.css"
     }]
   }

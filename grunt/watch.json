@@ -1,11 +1,7 @@
 {
     "js-app": {
-        "files": ["src/js/app-*"],
+        "files": ["src/js/*"],
         "tasks": ["compile-app"]
-    },
-    "js-common": {
-        "files": ["src/js/common/*"],
-        "tasks": ["compile-common"]
     },
     "css": {
         "files": ["src/css/*"],
