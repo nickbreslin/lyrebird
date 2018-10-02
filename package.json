@@ -8,6 +8,7 @@
     "url": "git+https://github.com/nickbreslin/lyrebird.git"
   },
   "dependencies": {
-    "annyang": "^2.6.1"
+    "annyang": "^2.6.1",
+    "speechkitt": "^1.0.0"
   }
 }
