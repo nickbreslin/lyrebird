@@ -1,5 +1,5 @@
 {
     "app": [
-        "public/assets/js/*"
+        "public/assets/js/app.js"
     ]
 }

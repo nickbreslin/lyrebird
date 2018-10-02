@@ -24,9 +24,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('setup',          ['concat:lib', 'concat:libcss', 'copy']);
-    grunt.registerTask('compile-assets', ['cssmin',     'handlebars']);
+    grunt.registerTask('compile-assets', ['cssmin']);
 
-    grunt.registerTask('compile-app',    ['clean:app',    'jshint:js',    'concat:js-app']);
+    grunt.registerTask('compile-app',    ['clean:app', 'jshint:js', 'concat:js']);
 
     grunt.registerTask('default',        ['setup', 'compile-assets', 'compile-app']);
     grunt.registerTask('build',          ['clean', 'setup', 'compile-assets', 'concat', 'uglify']);

@@ -2,7 +2,7 @@
 	"options": {
 		"separator": ";\n\n"
 	},
-	"js-app": {
+	"js": {
 		"src": ["src/js/*"],
 		"dest": "public/assets/js/app.js"
 	},
@@ -13,7 +13,7 @@
             "node_modules/handlebars/dist/handlebars.min.js",
             "node_modules/moment/min/moment.min.js",
             "node_modules/annyang/dist/annyang.js",
-            "node_modules/annyang/dist/speechkitt.js"
+            "node_modules/speechkitt/dist/speechkitt.min.js"
         ],
 		"dest": "public/assets/js/lib.js"
 	},

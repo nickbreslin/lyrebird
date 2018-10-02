@@ -1,7 +1,10 @@
+/* global annyang, SpeechKITT */
+
 if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
     'hello': function() {
+      'use strict';
       alert('Hello world!');
     }
   };
