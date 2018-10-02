@@ -1,0 +1,12 @@
+{
+  "name": "lyrebird",
+  "description": "voice control for web browser",
+  "license": "MIT",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickbreslin/lyrebird.git"
+  },
+  "dependencies": {
+  }
+}
