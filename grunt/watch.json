@@ -1,0 +1,20 @@
+{
+    "js-app": {
+        "files": ["src/js/app-*"],
+        "tasks": ["compile-app"]
+    },
+    "js-common": {
+        "files": ["src/js/common/*"],
+        "tasks": ["compile-common"]
+    },
+    "css": {
+        "files": ["src/css/*"],
+        "tasks": ["compile-assets"]
+    },
+    "handlebars-app": {
+        "files": [
+            "<%= handlebars.app.src %>"
+        ],
+        "tasks": ["handlebars:app"]
+    }
+}

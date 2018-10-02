@@ -1,0 +1,24 @@
+{
+  "ui": {
+    "files": [
+      {
+        "expand": true,
+        "flatten": true,
+        "filter": "isFile",
+        "src": "node_modules/ui/docs/assets/img/**",
+        "dest": "public/assets/img/"
+      }
+    ]
+  },
+  "ui-handlebars": {
+    "files": [
+      {
+        "expand": true,
+        "flatten": true,
+        "filter": "isFile",
+        "src": "node_modules/ui-handlebars/src/**",
+        "dest": "src/templates/"
+      }
+    ]
+  }
+}

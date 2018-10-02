@@ -1,0 +1,23 @@
+{
+    "app": {
+        "files": {
+            "public/assets/js/app.min.js": [
+                "public/assets/js/app.js"
+            ]
+        }
+    },
+    "common": {
+        "files": {
+            "public/assets/js/common.min.js": [
+                "public/assets/js/common.js"
+            ]
+        }
+    },
+    "lib": {
+        "files": {
+            "public/assets/js/lib.min.js": [
+                "public/assets/js/lib.js"
+            ]
+        }
+    }
+}

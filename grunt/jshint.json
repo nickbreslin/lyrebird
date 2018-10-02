@@ -1,0 +1,25 @@
+{
+    "all": [
+        "Gruntfile.js",
+        "grunt/*",
+        "src/js/*.js",
+        "src/js/**/*.js"
+    ],
+    "js": [
+        "src/js/*.js",
+        "src/js/**/*.js"
+    ],
+    "js-common": [
+        "src/js/common/*.js"
+    ],
+    "js-app": [
+        "src/js/app*.js"
+    ],
+    "grunt": [
+        "Gruntfile.js",
+        "grunt/*"
+    ],
+    "options": {
+        "jshintrc": "grunt/jshintrc.json"
+    }
+}

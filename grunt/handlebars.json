@@ -1,0 +1,12 @@
+{
+    "app": {
+        "options": {
+            "namespace": "app"
+        },
+        "src": ["src/templates/*.hbs"],
+        "dest": "public/assets/js/templates.js",
+        "files": {
+            "<%= handlebars.app.dest %>" : "<%= handlebars.app.src %>"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "target": {
+    "files": [{
+      "expand": false,
+      "src": ["src/css/*.css", "!src/css/font.css"],
+      "dest": "public/assets/css/styles.css"
+    }]
+  }
+}
