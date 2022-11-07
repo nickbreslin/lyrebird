@@ -1,17 +1,63 @@
-/* global annyang, aanyangCallbacks, SpeechKITT */
+/* global annyang, aanyangCallbacks, SpeechKITT, util */
 
 let lyre = {};
 lyre.event = {};
+lyre.linkIndex = 0;
 
 lyre.event.scroll_up = function () {
 	'use strict';
 	console.log('scroll up');
 };
 
-lyre.event.scroll_down = function (tag) {
+lyre.event.scroll_down = function () {
 	'use strict';
-	console.log('scroll down: ' + tag);
+	console.log('scroll down: ');
 };
+
+lyre.event.select_nav = function () {
+	'use strict';
+	$('nav').addClass('border border-primary');
+};
+
+lyre.event.select_link = function (ele) {
+	'use strict';
+
+	let i = lyre.linkIndex;
+
+	switch( ele ) {
+		case 'first':
+			i = 0;
+			break;
+
+		case 'second':
+			i = 1;
+			break;
+
+		case 'third':
+			i = 2;
+			break;
+
+		case 'next':
+			i += 1;
+			break;
+
+		case 'previous':
+			i -= 1;
+			break;
+
+		default:
+			i = i;
+	} 
+
+
+	//util.js
+	util.clamp(i, 0, $('a', 'nav').length);
+
+	lyre.linkIndex = i;
+
+	$('a', 'nav').eq(i).focus();
+};
+
 
 
 lyre.init = function () {
@@ -46,6 +92,11 @@ lyre.annyang = function() {
 
 	commands['scroll up']   = lyre.event.scroll_up;
 	commands['scroll down'] = lyre.event.scroll_down;
+
+	commands['select nav'] = lyre.event.select_nav;
+	commands['select navigation'] = lyre.event.select_nav;
+
+	commands['select :ele link'] = lyre.event.select_link;
 
 	annyang.addCommands(commands);
 	annyang.setLanguage('en');
